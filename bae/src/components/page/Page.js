@@ -1,7 +1,12 @@
-import Leaderboard from "../leaderboard/leaderboard.js";
+import Leaderboard from "../leaderboard/Leaderboard.js";
 
 export default function Page(){
     
-    return <div> <Leaderboard/>
+    return <div className="search-component"> 
+
+                    
+        
+        
+            <Leaderboard/>
             </div>
 }
