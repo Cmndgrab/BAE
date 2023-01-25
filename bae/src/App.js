@@ -1,5 +1,5 @@
 
-
+import Search from "./components/Search/Search";
 import Result from "./components/Result/Result";
 
 import './App.css';
@@ -11,7 +11,7 @@ function App() {
   return (
     <ChakraProvider>
     <div className="App">
-      Hello BAE!
+      <Search/>
       <Result />
     </div>
     <Page/>

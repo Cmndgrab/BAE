@@ -10,13 +10,17 @@ export default function Search(){
       }
     
 
+      async function onClick(){
 
+      }
      
-    return  <input
+    return  <><input
     data-testid="search-input"
     type="text"
     placeholder="Search food"
     onChange={onChange}
     value={search.searchTerm}
-  ></input>
+  ></input><button className="search-button" onClick={onClick}>
+  Whats my carbon score?
+</button></>
 }
