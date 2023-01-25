@@ -1,4 +1,5 @@
 import { useState } from "react";
+import data from "../../lib/data.js";
 
 export default function Search() {
   const [search, setSearch] = useState("");
@@ -8,7 +9,13 @@ export default function Search() {
     setSearch({ ...search, searchTerm: newSearchTerm });
   }
 
-  async function onClick() {}
+  // async function onClick() {}
+  const onClick = () => {
+    // Code to perform search
+  const filteredData = data.filter(food => data.food.toLowerCase().includes(search.toLowerCase()));
+  console.log(filteredData);
+  }
+
 
   return (
     <>
@@ -20,7 +27,7 @@ export default function Search() {
           onChange={onChange}
           value={search.searchTerm}
         ></input>
-        <button className="search-button" role="button" onClick={onClick}>
+        <button className="search-button" onClick={onClick}>
           Whats my carbon score?
         </button>
       </div>

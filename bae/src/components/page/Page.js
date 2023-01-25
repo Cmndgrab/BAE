@@ -1,4 +1,4 @@
-import Leaderboard from "../leaderboard/Leaderboard.js";
+import Leaderboard from "../leaderboard/leaderboard.js";
 
 export default function Page(){
     

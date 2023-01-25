@@ -10,7 +10,7 @@ import {
     TableContainer,
   } from '@chakra-ui/react'
 
-export default function Leaderboard(){
+export default function leaderboard(){
     let danScore = 14
         return  <div className="leaderboard-container">
             <TableContainer>
