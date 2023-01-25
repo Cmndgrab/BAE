@@ -5,19 +5,19 @@ import data from "../../lib/data.js";
 
 // replace the [number] with the return of the input submission
 
-function Result(props) {
+ function Result(props) {
   console.log(data);
   return (
     <div className="card">
       <header>
-        <h1>{props.food}</h1>
+        <h1>{data[0].food}</h1>
       </header>
-      <img src={props.image} alt="food picture" />
+      <img src={data[0].image} alt="food picture" />
       <div className="content">
-        <p> {props.description}</p>
+        <p> {data[0].description}</p>
       </div>
       <div>
-        <h1>Score: {props.carbonScore}</h1>
+        <h1>Score: {data[0].carbonScore}</h1>
       </div>
     </div>
   );
