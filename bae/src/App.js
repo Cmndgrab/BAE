@@ -10,7 +10,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
-  const [clicked, setClick] = useState(false)
+  
   const [food, setFood] = useState("");
   const foodByName = (name) => {
     setFood(
@@ -25,7 +25,7 @@ function App() {
     <ChakraProvider>
       <Header />
       <div className="App">
-        <Search click={clicked} />
+        <Search />
         
       </div>
       <Page />

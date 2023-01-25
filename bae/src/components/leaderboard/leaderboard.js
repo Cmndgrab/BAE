@@ -9,9 +9,9 @@ import {
     TableCaption,
     TableContainer,
   } from '@chakra-ui/react'
-
+import {clicked} from "../Search/Search.js"
 export default function leaderboard(){
-    let danScore = 14
+    let danScore = 1
         return  <div className="leaderboard-container">
             <TableContainer>
   <Table variant='simple'>
@@ -32,22 +32,22 @@ export default function leaderboard(){
       <Tr>
         <Td>Jane</Td>
         <Td>Cyber-Security</Td>
-        <Td isNumeric>10</Td>
+        <Td isNumeric>3</Td>
       </Tr>
       <Tr>
         <Td>Lucy</Td>
         <Td>Digital Intelligence</Td>
-        <Td isNumeric>9</Td>
+        <Td isNumeric>7</Td>
       </Tr>
       <Tr>
         <Td>Matt</Td>
         <Td>Data Science</Td>
-        <Td isNumeric>5</Td>
+        <Td isNumeric>14</Td>
       </Tr>
       <Tr>
         <Td>Ian</Td>
         <Td>Analysis</Td>
-        <Td isNumeric>4</Td>
+        <Td isNumeric>18</Td>
       </Tr>
     </Tbody>
     <Tfoot>

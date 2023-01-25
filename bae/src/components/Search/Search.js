@@ -3,7 +3,7 @@ import data from "../../lib/data.js";
 import Result from "../Result/Result.js";
 export default function Search() {
   const [search, setSearch] = useState({});
-  const [clicked, setClick] = useState(Boolean)
+  const [clicked, setClick] = useState(false)
   function onChange(e) {
     const newSearchTerm = e.target.value;
 
@@ -15,8 +15,8 @@ function getData(){
 }
   // async function onClick() {}
   function onClick() {
-    getData()
-    setClick(false)
+    
+    setClick(false | true)
   console.log(clicked)
   }
 
@@ -34,7 +34,7 @@ function getData(){
         <button className="search-button" onClick={onClick}>
           Whats my carbon score?
         </button>
-       {clicked ?(<p></p>)  : (<Result data={search}/>)}
+       {clicked ?(<Result data={search}/>)  : (<p></p>)}
       </div>
     </>
   );
